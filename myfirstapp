@@ -18,13 +18,14 @@ def user_input_features():
     Cylinders = st.sidebar.selectbox('Cylinder',['4','6','8','12','3','10','5'])
     Transmission = st.sidebar.selectbox('Transmission',['A4','M5','AS5','AS4','M6','A5','A3','AS6'])
     Fuel_Type = st.sidebar.selectbox('Fuel Type',['X','Z','E','N','D'])
-    data = {'Make': Make,
-            'Model': Model,
-            'Vehicle Class': Vehicle_Class,
-            'Engine Size' : Engine_Size,
-            'Cylinders' : Cylinders,
-            'Transmission' : Transmission,
-            'Fuel Type' : Fuel_Type,
+    data = {'MAKE': Make,
+            'MODEL': Model,
+            'VEHICLE CLASS': Vehicle_Class,
+            'ENGINE SIZE' : Engine_Size,
+            'CYLINDERS' : Cylinders,
+            'TRANSMISSION' : Transmission,
+            'FUEL' : Fuel_Type,
+            'COEMISSIONS ' : COEmissions,
             }
     features = pd.DataFrame(data, index=[0])
     return features
