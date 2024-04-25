@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 import pickle
-from sklearn.linear_model import LinearRegression
-from sklearn import preprocessing
-from sklearn.model_selection import train_test_split
+#from sklearn.linear_model import LinearRegression
+#from sklearn import preprocessing
+#from sklearn.model_selection import train_test_split
 
 st.write("""
 # Fuel Consumption Model
