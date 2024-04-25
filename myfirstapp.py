@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
+
 import pickle
-#from sklearn.linear_model import LinearRegression
-#from sklearn import preprocessing
-#from sklearn.model_selection import train_test_split
 
 st.write("""
 # Fuel Consumption Model
@@ -41,5 +39,5 @@ loaded_model = pickle.load(open("FuelConsumptionModel.h5", "rb"))
 
 prediction = loaded_model.predict(df)
 
-st.subheader(' Sales Prediction')
+st.subheader(' FuelConsumption Prediction')
 st.write(prediction)
